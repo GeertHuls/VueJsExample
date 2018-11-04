@@ -113,7 +113,7 @@ export default {
         robot.rightArm.cost +
         robot.base.cost;
 
-      this.$store.commit(
+      this.$store.dispatch(
         'addRobotToCart',
         Object.assign({}, robot, { cost }),
       );
